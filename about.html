@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang • HyperSter Protocol</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="assets/app.js"></script>
+  <style>
+    .team{ display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; margin-top:18px; }
+    .avatar{ width:60px; height:60px; border-radius:50%; background:linear-gradient(135deg, var(--brand1), var(--brand2)); box-shadow: var(--shadow); }
+    @media (max-width: 920px){ .team{ grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <nav class="nav">
+    <div class="container wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-badge"></span>
+        <span>HyperSter Protocol</span>
+      </a>
+      <div class="row">
+        <a href="index.html" class="btn">Beranda</a>
+        <a href="index.html#contact" class="btn">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="section">
+    <div class="container">
+      <div class="card">
+        <h1 class="mt-0">Tentang HyperSter Protocol</h1>
+        <p class="lead">HyperSter adalah protokol peluncuran token dan likuiditas permissionless. Misi kami: <b>mendemokratisasi akses permodalan</b> bagi builder sambil menjaga <b>keamanan investor</b>.</p>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <h2>Nilai Inti</h2>
+          <div class="grid-3">
+            <div class="card"><h3>Transparansi</h3><p>Semua proses—dari penjualan hingga penguncian likuiditas—terlihat publik.</p></div>
+            <div class="card"><h3>Fairness</h3><p>Mekanisme anti‑bot dan porsi komunitas yang jelas untuk mengurangi asimetri informasi.</p></div>
+            <div class="card"><h3>Keamanan</h3><p>Checklist audit internal, multi‑sig treasury, dan pemantauan on‑chain.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Tim Inti</h2>
+          <div class="team">
+            <div class="card">
+              <div class="row" style="align-items:center">
+                <div class="avatar"></div>
+                <div>
+                  <b>Afif</b><br/><span class="muted">Protocol Lead</span>
+                </div>
+              </div>
+              <p>Desain arsitektur peluncuran, parameter tokenomics, & koordinasi audit internal.</p>
+            </div>
+            <div class="card">
+              <div class="row" style="align-items:center">
+                <div class="avatar"></div>
+                <div>
+                  <b>Vitalik</b><br/><span class="muted">DevRel & Docs</span>
+                </div>
+              </div>
+              <p>Mengelola dokumentasi, tutorial integrasi, & relasi pengembang.</p>
+            </div>
+            <div class="card">
+              <div class="row" style="align-items:center">
+                <div class="avatar"></div>
+                <div>
+                  <b>Chengpeng Zhao</b><br/><span class="muted">Ops & Compliance</span>
+                </div>
+              </div>
+              <p>Operasional, kebijakan anti‑fraud, & kolaborasi dengan auditor pihak ketiga.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>FAQ</h2>
+          <div class="card faq">
+            <div class="faq-item">
+              <div class="faq-q">Apakah HyperSter sudah mainnet? <span class="chev">›</span></div>
+              <div class="faq-a">Untuk kebutuhan tugas, konten bersifat ilustratif. Peta jalan menargetkan public testnet lebih dulu.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Apakah ada token resmi? <span class="chev">›</span></div>
+              <div class="faq-a">Belum. Tokenomics di halaman utama adalah contoh. Hindari penipuan yang mengatas‑namakan HyperSter.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Bisakah proyek saya listing? <span class="chev">›</span></div>
+              <div class="faq-a">Tujuan akhir HyperSter adalah permissionless listing. Sementara ini, kurasi manual untuk kualitas & keamanan.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container row" style="justify-content:space-between;">
+      <div>© 2025 HyperSter Protocol</div>
+      <div class="row">
+        <a class="tag" href="index.html">Beranda</a>
+        <a class="tag" href="index.html#contact">Kontak</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

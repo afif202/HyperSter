@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HyperSter Protocol — Company Profile</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="assets/app.js"></script>
+  <style>
+    /* local animations */
+    .reveal{ animation: pop .4s ease forwards; opacity:1!important; transform:none!important; }
+    .card, .milestone{ opacity:0; transform: translateY(10px) scale(.995); }
+    @keyframes pop{ from{ opacity:0; transform: translateY(10px) scale(.995); } to{ opacity:1; transform:none; } }
+    .chev{ transition: transform .18s ease; }
+    .chev.open{ transform: rotate(90deg); }
+  </style>
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <nav class="nav">
+    <div class="container wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-badge"></span>
+        <span>HyperSter Protocol</span>
+      </a>
+      <div class="row">
+        <a href="about.html" class="btn">Tentang</a>
+        <a href="#contact" class="btn">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container grid">
+      <div>
+        <span class="badge">DeFi • Launch • Liquidity</span>
+        <h1>Launchpad & Liquidity Engine<br/>untuk Altseason yang Permissionless</h1>
+        <p class="lead">HyperSter Protocol membantu proyek kripto merilis token, bootstrap likuiditas, dan menjalankan kampanye fair‑launch tanpa hambatan izin. Desain kami fokus pada <b>keamanan, keadilan distribusi</b>, dan <b>UX cepat</b> bagi trader.</p>
+        <div class="cta">
+          <a href="about.html" class="button">Pelajari Ekosistem</a>
+          <a id="copy-tagline" class="button secondary" href="javascript:void(0)">Salin Tagline</a>
+        </div>
+        <div class="row mt-24">
+          <span class="tag">AMM Pools</span>
+          <span class="tag">Fair-Launch</span>
+          <span class="tag">Token Lock</span>
+          <span class="tag">Anti-Rug Checks</span>
+        </div>
+      </div>
+      <div>
+        <!-- simple illustrative blob -->
+        <svg viewBox="0 0 400 400" role="img" aria-label="HyperSter mesh" style="width:100%; filter: drop-shadow(0 16px 40px rgba(0,0,0,.5));">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0%" stop-color="#7c3aed"/>
+              <stop offset="100%" stop-color="#22d3ee"/>
+            </linearGradient>
+          </defs>
+          <path d="M60 180 Q120 40 200 110 T340 150 T250 300 T120 280 Z" fill="url(#g1)" opacity=".7"/>
+          <circle cx="300" cy="90" r="10" fill="#ffdd57"/>
+          <circle cx="100" cy="320" r="8" fill="#22d3ee"/>
+          <circle cx="60" cy="80" r="6" fill="#7c3aed"/>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Kenapa HyperSter?</h2>
+        <p class="lead">Tiga pilar utama untuk meluncurkan dan menumbuhkan komunitas token Anda.</p>
+        <div class="grid-3">
+          <div class="card">
+            <h3>1) Launchpad Permissionless</h3>
+            <p>Pendaftaran proyek langsung on‑chain. Mekanisme anti‑bot & whitelist opsional untuk menjaga fairness penjualan.</p>
+          </div>
+          <div class="card">
+            <h3>2) Liquidity Engine</h3>
+            <p>Otomasi pembuatan pool AMM, penambahan likuiditas, dan penguncian LP sehingga risiko rug‑pull berkurang signifikan.</p>
+          </div>
+          <div class="card">
+            <h3>3) Trader‑First UX</h3>
+            <p>Dashboard cepat, grafik harga, dan alert terintegrasi agar komunitas bisa mengambil keputusan lebih baik.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <h2 class="mt-0">Tokenomics </h2>
+          <div class="tokenomics">
+            <div class="token-row">
+              <div>Community</div>
+              <div class="bar" style="width:50%"></div>
+            </div>
+            <div class="token-row">
+              <div>Liquidity</div>
+              <div class="bar" style="width:25%"></div>
+            </div>
+            <div class="token-row">
+              <div>Treasury</div>
+              <div class="bar" style="width:15%"></div>
+            </div>
+            <div class="token-row">
+              <div>Team</div>
+              <div class="bar" style="width:10%"></div>
+            </div>
+          </div>
+          <p class="lead">Angka di atas adalah ilustrasi untuk tugas; sesuaikan saat implementasi mainnet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Roadmap 2025</h2>
+        <div class="timeline">
+          <div class="milestone">
+            <div class="when">Q1</div>
+            <b>Closed Alpha</b> — Modul Launchpad v0, simulasi fair‑launch, audit internal.
+          </div>
+          <div class="milestone">
+            <div class="when">Q2</div>
+            <b>Public Testnet</b> — Liquidity Engine v1, integrasi wallet populer, dokumentasi dev.
+          </div>
+          <div class="milestone">
+            <div class="when">Q3</div>
+            <b>Mainnet Launch</b> — Listing awal pool, program insentif liquidity provider.
+          </div>
+          <div class="milestone">
+            <div class="when">Q4</div>
+            <b>DAO & Staking</b> — Tata kelola, bagi hasil biaya protokol, grant builder.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="card">
+          <h2 class="mt-0">Hubungi Kami</h2>
+          <p class="lead">Kirimkan ide, kolaborasi, atau proposal peluncuran.</p>
+          <form class="row" action="contact.php" method="POST" onsubmit="return validateContact()">
+            <input type="text" name="hp_name" style="display:none" tabindex="-1" autocomplete="off"/> <!-- honeypot -->
+            <input required name="name" placeholder="Nama" style="flex:1; min-width:220px; padding:12px 14px; border-radius:12px; border:1px solid var(--card-border); background:rgba(255,255,255,0.04); color:var(--text)" />
+            <input required type="email" name="email" placeholder="Email" style="flex:1; min-width:220px; padding:12px 14px; border-radius:12px; border:1px solid var(--card-border); background:rgba(255,255,255,0.04); color:var(--text)" />
+            <textarea required name="message" placeholder="Pesan" rows="3" style="width:100%; padding:12px 14px; border-radius:12px; border:1px solid var(--card-border); background:rgba(255,255,255,0.04); color:var(--text)"></textarea>
+            <button class="button" type="submit">Kirim Pesan</button>
+          </form>
+          <script>
+            function validateContact(){
+              const email = document.querySelector('input[name=email]').value.trim();
+              const hp = document.querySelector('input[name=hp_name]').value;
+              if(hp){ return false; } // bot
+              if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+                toast('Email tidak valid'); return false;
+              }
+              return true;
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+    <section id="community" class="section center">
+  <div class="container">
+    <h2>Bergabung dengan Komunitas HyperSter</h2>
+    <p class="lead">
+      Dapatkan insight, alpha leaks, dan kolaborasi langsung dengan sesama builder DeFi.
+    </p>
+    <div class="cta">
+      <a href="#" class="button">Discord</a>
+      <a href="#" class="button secondary">Twitter/X</a>
+      <a href="#" class="button secondary">Telegram</a>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="container row" style="justify-content:space-between;">
+      <div>© 2025 HyperSter Protocol</div>
+      <div class="row">
+        <a class="tag" href="about.html">Dokumentasi</a>
+        <a class="tag" href="#contact">Kontak</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
