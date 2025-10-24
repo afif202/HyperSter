@@ -1,0 +1,13 @@
+# macOS system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Backup & temp files
+*.log
+*.tmp
+
+# PHP built-in server cache
+.phpunit.result.cache
